@@ -1,13 +1,13 @@
 sensor_kit_base_link:
   camera_link:
-    x: 0.00
+    x: 0.16
     y: 0.00
-    z: 0.00
+    z: -0.15
     roll: 0.00
     pitch: 0.00
     yaw: 0.00
   lidar_link:
-    x: 0.0
+    x: 0.
     y: 0.0
     z: 0.0
     roll: 0.0
