@@ -10,7 +10,6 @@
  		<arg name="input_topic" value="$(var imu_raw_name)"/>
  		<arg name="output_topic" value="imu_data"/>
 		<arg name="param_file" value="$(var imu_corrector_param_file)"/>
-		<remap from="/sensing/imu/livox/imu" to="livox/imu" />
     </include>
 
     <include file="$(find-pkg-share imu_corrector)/launch/gyro_bias_estimator.launch.xml">
