@@ -38,7 +38,7 @@ def launch_setup(context, *args, **kwargs):
         parameters=[
             {
                 "input_topics": [
-                    "/sensing/lidar/right/pointcloud",
+                    "/ring_cloud",
                 ],
                 "output_frame": LaunchConfiguration("base_frame"),
                 "input_twist_topic_type": "twist",
