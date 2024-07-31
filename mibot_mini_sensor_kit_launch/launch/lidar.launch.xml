@@ -9,7 +9,6 @@
 
   <group>
     <push-ros-namespace namespace="lidar"/>
-	<remap from="/livox/lidar" to="/sensing/lidar/livox/lidar" />
 
     <!--<include file="$(find-pkg-share livox_ros_driver2)/launchROS2/msg_MID360_launch.launch.xml">
       <arg name="xfer_format" value="0"/>
