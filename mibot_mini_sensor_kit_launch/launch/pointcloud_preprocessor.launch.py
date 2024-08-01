@@ -33,14 +33,15 @@ def launch_setup(context, *args, **kwargs):
         name="concatenate_data",
         remappings=[
             ("~/input/twist", "/sensing/vehicle_velocity_converter/twist_with_covariance"),
-            ("output", "concatenated/pointcloud"),
+            ("~/output/points", "/sensing/lidar/concatenated/pointcloud"),
         ],
         parameters=[
             {
-                "input_topics": [
+                "input/points": [
                     "/sensing/lidar/top/pointcloud_raw",
                 ],
                 "output_frame": LaunchConfiguration("base_frame"),
+                "input_frame": "livox_frame",
                 "input_twist_topic_type": "twist",
             }
         ],
