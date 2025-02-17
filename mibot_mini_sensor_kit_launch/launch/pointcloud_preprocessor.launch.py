@@ -39,6 +39,8 @@ def launch_setup(context, *args, **kwargs):
             {
                 "input/points": [
                     "/sensing/lidar/top/pointcloud_raw",
+                    "/sensing/lidar/left/pointcloud_raw",
+                    "/sensing/lidar/right/pointcloud_raw",
                 ],
                 "output_frame": LaunchConfiguration("base_frame"),
                 "input_frame": "livox_frame",
