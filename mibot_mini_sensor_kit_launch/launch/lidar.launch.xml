@@ -10,8 +10,7 @@
   <group>
     <push-ros-namespace namespace="lidar"/>
 
-    <include file="$(find-pkg-share livox_ros_driver2)/launchROS2/msg_MID360_launch.launch.xml">
-      <arg name="frame_id" value="lidar_link"/>
+    <include file="$(find-pkg-share livox_ros_driver2)/launchROS2/msg_MID360_launch.py">
     </include>
 	
     <load_composable_node target="pointcloud_container">
