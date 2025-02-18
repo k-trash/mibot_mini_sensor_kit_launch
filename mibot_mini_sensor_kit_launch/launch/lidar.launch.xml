@@ -16,9 +16,9 @@
 	  <arg name="user_config_path" value="$(find mibot_mini_sensor_kit_launch)/config/livox_config.json" />
     </include>
 	
-	<load_composable_node target="pointcloud_container">
-		<composable_node pkg="livox_ring" plugin="livox_ring::LivoxConvert" name="livox_ring" />
-	</load_composable_node>
+    <load_composable_node target="pointcloud_container">
+        <composable_node pkg="livox_ring" plugin="livox_ring::LivoxConvert" name="livox_ring" />
+    </load_composable_node>
 
     <include file="$(find-pkg-share mibot_mini_sensor_kit_launch)/launch/pointcloud_preprocessor.launch.py">
       <arg name="base_frame" value="base_link"/>
